@@ -2,7 +2,7 @@
   <div id="container">
     <router-view name="header"></router-view>
     <router-view name="content"></router-view>
-    <v-footer></v-footer>
+    <router-view name="footer"></router-view>
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 	html,body,#app,#container{
 		@include rect(100%, 100%);
 	}
-	
 	#container{
 		@include flexbox();
 		@include flex-direction(column);
@@ -29,6 +28,9 @@ export default {
 			@include rect(100%, 0.4rem);
 			@include bgcolor(#fff);
 			border-bottom:1px solid #d8d8d8;
+			&.search{
+				@include rect(100%, 0rem);
+			}
 		}
 		#content{
 			@include flex();

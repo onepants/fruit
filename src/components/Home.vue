@@ -102,11 +102,11 @@
 			   var data4 = data.data.banner.mainBanners[8].content;
 			   
 			   var data5 = data.data.banner.mainBanners[10].content[0];
-			   var data51 = data.data.banner.mainBanners[11].content;
-			   var data6 = data.data.banner.mainBanners[12].content[0];
-			   var data61 = data.data.banner.mainBanners[13].content;
-			   var data7 = data.data.banner.mainBanners[14].content[0];
-			   var data71 = data.data.banner.mainBanners[15].content;
+			   var data51 = data.data.banner.mainBanners[12].content;
+			   var data6 = data.data.banner.mainBanners[13].content[0];
+			   var data61 = data.data.banner.mainBanners[14].content;
+			   var data7 = data.data.banner.mainBanners[15].content[0];
+			   var data71 = data.data.banner.mainBanners[16].content;
 			   var data8 = data.data.banner.mainBanners[17].content;
 			   
 		       var arr1 = [];

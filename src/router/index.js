@@ -12,7 +12,7 @@ import CartHeader from "@/components/CartHeader.vue"
 import UserHeader from "@/components/UserHeader.vue"
 import SearchHeader from "@/components/SearchHeader.vue"
 
-
+import Footer from "@//components/Footer.vue"
 
 Vue.use(Router)
 
@@ -26,28 +26,32 @@ export default new Router({
     	path:"/home",
     	components:{
     		header:HomeHeader,
-    		content:Home
+    		content:Home,
+    		footer:Footer
     	}
     },
     {
     	path:"/kind",
     	components:{
     		header:KindHeader,
-    		content:Kind
+    		content:Kind,
+    		footer:Footer
     	}
     },
     {
     	path:"/cart",
     	components:{
     		header:CartHeader,
-    		content:Cart
+    		content:Cart,
+    		footer:Footer
     	}
     },
     {
     	path:"/user",
     	components:{
     		header:UserHeader,
-    		content:User
+    		content:User,
+    		footer:Footer
     	}
     },
     {
