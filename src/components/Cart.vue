@@ -1,5 +1,7 @@
 <template>
-	<div id="content">购物车</div>
+	<div id="content">
+		uuuuuu
+	</div>
 </template>
 
 <script>

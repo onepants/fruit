@@ -19,7 +19,7 @@
 					{path:"/home",name:"首页",icon:"icon-1"},
 					{path:"/kind",name:"分类",icon:"icon-leimupinleifenleileibie--"},
 					{path:"/cart",name:"购物车",icon:"icon-gouwuche"},
-					{path:"/user",name:"我的",icon:"icon-my"}
+					{path:"/user",name:"我的果园",icon:"icon-my"}
 				]
 			}
 		}

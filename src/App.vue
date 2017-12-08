@@ -27,7 +27,8 @@ export default {
 		@include flex-direction(column);
 		#header{
 			@include rect(100%, 0.4rem);
-			@include bgcolor(#f66);
+			@include bgcolor(#fff);
+			border-bottom:1px solid #d8d8d8;
 		}
 		#content{
 			@include flex();
@@ -35,7 +36,7 @@ export default {
 			overflow:auto;
 		}
 		#footer{
-			@include rect(100%, 0.5rem);
+			@include rect(100%, 0.45rem);
 			@include bgcolor(#eee);
 			ul{
           @include rect(100%,  100%);
@@ -51,11 +52,17 @@ export default {
              @include justify-content();
              @include align-items();
              @include textcolor(#333);
-             
-             &.router-link-active{
-               @include textcolor(#f66);
-             }
-             
+
+	             &.router-link-active{
+	               @include textcolor(#65A032);
+	             }
+             	 i{
+             	 	font-size:20px;
+             	 }	
+             	 p{
+             	 	font-size:12px;
+             	 	margin-top:-5px;
+             	 }
             }
             
           }
