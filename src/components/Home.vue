@@ -102,12 +102,15 @@
 			   var data4 = data.data.banner.mainBanners[8].content;
 			   
 			   var data5 = data.data.banner.mainBanners[10].content[0];
-			   var data51 = data.data.banner.mainBanners[12].content;
-			   var data6 = data.data.banner.mainBanners[13].content[0];
-			   var data61 = data.data.banner.mainBanners[14].content;
-			   var data7 = data.data.banner.mainBanners[15].content[0];
-			   var data71 = data.data.banner.mainBanners[16].content;
-			   var data8 = data.data.banner.mainBanners[17].content;
+			   var data51 = data.data.banner.mainBanners[11].content;
+			   var data6 = data.data.banner.mainBanners[12].content[0];
+			   var data61 = data.data.banner.mainBanners[13].content;
+			   var data7 = data.data.banner.mainBanners[14].content[0];
+			   var data71 = data.data.banner.mainBanners[15].content;
+			   var data8 = data.data.banner.mainBanners[16].content[0];
+			   var data81 = data.data.banner.mainBanners[17].content;
+			   
+			   var data9 = data.data.banner.mainBanners[19].content;
 			   
 		       var arr1 = [];
 		       var arr2 = [];
@@ -119,8 +122,10 @@
 		       var arr61 = [];
 		       var arr7 = [];
 		       var arr71 = [];
-		       var arrsum = [];
 		       var arr8 = [];
+		       var arr81 = [];
+		       var arrsum = [];
+		       var arr9 = [];
 		       
 		       for(var item of data1){
 		       	  arr1.push(item.image)
@@ -153,14 +158,23 @@
 			   for(var item of data71){
 			   		arr71.push({img:item.image,id:item.banner_ad_id,title:item.title,subtitle:item.subtitle,price:item.price,volume:item.volume})
 			   }
+			   arr7.push(arr71);
+			   arrsum.push(arr7);
 			   
-			   for(var item of data8){
-			   	  arr8.push({img:item.image,title:item.title,subtitle:item.subtitle,price:item.price,volume:item.volume,id:item.banner_ad_id})
+			   arr8.push({img:data8.image,src:data8.target_url})		   
+			   for(var item of data81){
+			   		arr81.push({img:item.image,id:item.banner_ad_id,title:item.title,subtitle:item.subtitle,price:item.price,volume:item.volume})
+			   }
+			   arr8.push(arr81);
+			   arrsum.push(arr8);
+			   
+			   
+			   for(var item of data9){
+			   	  arr9.push({img:item.image,title:item.title,subtitle:item.subtitle,price:item.price,volume:item.volume,id:item.banner_ad_id})
 			   }
 			   
 			   
-			   arr7.push(arr71);
-			   arrsum.push(arr7);
+			   
 			   console.log(arrsum)
 			   
 		       that.bannerList = arr1;
@@ -168,7 +182,7 @@
 		       that.bigImageBanner = arr3;
 		       that.lineBanner = arr4;
 			   that.sumBanner = arrsum;
-			   that.finalBanner = arr8;
+			   that.finalBanner = arr9;
 
 		    })
 					

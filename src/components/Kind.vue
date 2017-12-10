@@ -37,6 +37,16 @@
 		methods:{
 			change(index){
 				this.currentIndex = index;
+				var dataUrl = "http://localhost:3000/kind?id="+this.currentIndex;
+				var that = this;
+				MyAjax.fetch(dataUrl,(data) => {
+					var data = data.data.childrenList[0].class3Group;
+					var arr = [];
+					for(var item of data){
+						arr.push({id:item.id,name:item.name,img:item.class_photo})
+					}
+					that.detailImg = arr;
+				})
 			}
 		},
 		mounted (){
@@ -50,8 +60,8 @@
 				}
 				that.detailImg = arr;
 			})
-		},
-		updated(){
+		}
+//		updated(){
 //			var dataUrl = "http://localhost:3000/kind?id="+this.currentIndex;
 //			var that = this;
 //			MyAjax.fetch(dataUrl,(data) => {
@@ -62,7 +72,7 @@
 //				}
 //				that.detailImg = arr;
 //			})
-		}
+//		}
 	}
 </script>
 

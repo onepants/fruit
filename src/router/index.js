@@ -6,11 +6,13 @@ import Kind from "@/components/Kind.vue"
 import Cart from "@/components/Cart.vue"
 import User from "@/components/User.vue"
 import Search from "@/components/Search.vue"
+import Person from "@/components/Person.vue"
 import HomeHeader from "@/components/HomeHeader.vue"
 import KindHeader from "@/components/KindHeader.vue"
 import CartHeader from "@/components/CartHeader.vue"
 import UserHeader from "@/components/UserHeader.vue"
 import SearchHeader from "@/components/SearchHeader.vue"
+import PersonHeader from "@/components/PersonHeader.vue"
 
 import Footer from "@//components/Footer.vue"
 
@@ -49,9 +51,7 @@ export default new Router({
     {
     	path:"/user",
     	components:{
-    		header:UserHeader,
-    		content:User,
-    		footer:Footer
+    		content:User
     	}
     },
     {
@@ -59,6 +59,13 @@ export default new Router({
     	components:{
     		header:SearchHeader,
     		content:Search
+    	}
+    },
+    {
+    	path:"/person",
+    	components:{
+    		content:Person,
+    		footer:Footer
     	}
     }
   ]
