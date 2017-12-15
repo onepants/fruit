@@ -66,15 +66,19 @@
 		<!--人气推荐-------------------------------->
 		<div class="hot">
 			<div class="hotheader" style="margin-bottom:.2rem"><img src="./../assets/355c.png" style="width:100%"/></div>
-			<div class="hotcontent" v-for="(item,index) in finalBanner" :key="index">
-				<div class="hotleft"><img :src="item.img" alt="" /></div>
-				<div class="hotright">
-					<h5>{{item.title}}</h5>
-					<p class="subtitle">{{item.subtitle}}</p>	
-					<p class="price">{{item.price}}￥/{{item.volume}}</p>
-					<div id="jia">+</div>
+			
+				<div class="hotcontent" v-for="(item,index) in finalBanner" :key="index">
+					<router-link :to="{name:'detail',proid:item.banner_ad_id}">
+						<div class="hotleft"><img :src="item.img" alt="" /></div>
+						<div class="hotright">
+							<h5>{{item.title}}</h5>
+							<p class="subtitle">{{item.subtitle}}</p>	
+							<p class="price">{{item.price}}￥/{{item.volume}}</p>
+							<div id="jia">+</div>
+						</div>
+					</router-link>
 				</div>
-			</div>
+			
 		</div>
 	</div>
 </template>

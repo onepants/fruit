@@ -7,6 +7,7 @@ import Cart from "@/components/Cart.vue"
 import User from "@/components/User.vue"
 import Search from "@/components/Search.vue"
 import Person from "@/components/Person.vue"
+import Detail from "@/components/Detail.vue"
 import HomeHeader from "@/components/HomeHeader.vue"
 import KindHeader from "@/components/KindHeader.vue"
 import CartHeader from "@/components/CartHeader.vue"
@@ -66,6 +67,13 @@ export default new Router({
     	components:{
     		content:Person,
     		footer:Footer
+    	}
+    },
+    {
+    	path:"/detail/:proid",
+    	name:"detail",
+    	components:{
+    		content:Detail
     	}
     }
   ]

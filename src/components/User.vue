@@ -1,14 +1,13 @@
 <template>
 	<div id="content">
-		
+		<router-link to="/home"><i class="iconfont icon-shiliangzhinengduixiang2"></i></router-link>
 		<div class="abc">
 			<div id="red" @click="type='v-login'">登录</div>
 			<div id="blue" @click="type='v-register'">还未注册？去注册</div>
 		</div>	
 		<div class="db">
 			<component :is="type"></component>
-		</div>
-		
+		</div>	
 	</div>
 </template>
 
@@ -82,6 +81,11 @@
 		.db{
 			width:80%;
 			margin:10%;
+		}
+		i{
+			margin-left:-340px;
+			margin-top:60px;
+			color:#666;
 		}
 	}
 </style>
